@@ -14,7 +14,7 @@
 
 1. **Q:** **Can you establish a peering connection to a VPC in a different REGION?**
 
-    - **Ans:** Not possible. Peering Connection are available only between VPC in the same region.
+    - **Ans:** Yes you can establish peering connection between VPCs in a different AWS Region or with a VPC in another AWS account.
 
 1. **Q: Can you connect your VPC with a VPC owned by another AWS account?**
 
@@ -530,7 +530,8 @@
     - **Ans:** 3. Secure Hosting & 4. Storage Scaling
 
 1. **Q: What’s the difference between instance store and EBS?**
-
+    Instance store is ephimeral storage while EBS Vol is not ephimeral.
+    EBS volume is a network attached storage while Instance store is not network attached so it closest to the EC2 Instance
     **Issue**
 
     I’m not sure whether to store the data associated with my Amazon EC2 instance in instance store or  in an attached Amazon Elastic Block Store (Amazon EBS) volume. Which option is best for me?
